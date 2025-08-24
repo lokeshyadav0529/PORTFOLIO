@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokesh Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">LOKESH PORTFOLIO</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Lokesh Kumar</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="Lokesh Portfolio">
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Work Experience -->
+        <section class="secondsection">
+            <h1>Work Experience</h1>
+            <div class="experience">
+                <div class="exp-item">
+                    <h3>Web Developer Intern</h3>
+                    <p><strong>Tcs Company</strong> | 2024</p>
+                    <p>Developed responsive websites and optimized UI/UX.</p>
+                </div>
+                <div class="exp-item">
+                    <h3>Graphic Designer</h3>
+                    <p><strong>Freelance</strong> | 2023</p>
+                    <p>Created branding designs, posters, and social media graphics.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Lokesh Kumar | All Rights Reserved
+    </footer>
+
+    <!-- JS Files -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Typed.js animation
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+
+    </script>
+</body>
+
+</html>

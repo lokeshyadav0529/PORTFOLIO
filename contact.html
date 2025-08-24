@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Lokesh Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">LOKESH PORTFOLIO</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Contact Me</h1>
+      <form id="whatsappForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send on WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Lokesh Kumar | All Rights Reserved
+  </footer>
+
+  <script>
+    document.getElementById("whatsappForm").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let message = document.getElementById("message").value;
+
+      let whatsappNumber = "918209813084"; // ← yaha apna WhatsApp number daalo (country code ke sath)
+
+      let url = "https://wa.me/" + whatsappNumber + "?text="
+        + "Name: " + name + "%0a"
+        + "Email: " + email + "%0a"
+        + "Message: " + message;
+
+      window.open(url, '_blank').focus();
+    });
+  </script>
+</body>
+</html>
